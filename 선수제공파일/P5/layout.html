@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P5 로그인 정중앙</title>
+<style>
+* {
+  box-sizing: border-box; 
+  }
+body { 
+  margin: 0;
+  background: whitesmoke;
+  font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+ }
+
+#login {
+  width: 280px; 
+  padding: 24px;
+  background: white; 
+  border: 1px solid lightgray;
+  border-radius: 8px; 
+  }
+
+#login h2 {
+  margin: 0 0 16px;
+  }
+
+input { 
+  display: block;
+  width: 100%;
+  margin-bottom: 12px; 
+  padding: 10px; 
+  border: 2px solid lightgray;
+  }
+button { 
+  width: 100%; 
+  padding: 10px; 
+  background: royalblue; 
+  color: white; 
+  border: none;
+  }
+
+/* ▼ 이 아래에 CSS를 작성하세요 */
+
+#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#login h2 {
+  text-align: center;
+}
+
+input:focus {
+  border-color: orange;
+  outline: none;
+}
+
+button:active {
+  background: navy;
+}
+
+</style>
+</head>
+<body>
+  <div id="login">
+    <h2>로그인</h2>
+    <input type="text" placeholder="아이디">
+    <input type="password" placeholder="비밀번호">
+    <button>로그인</button>
+  </div>
+</body>
+</html>

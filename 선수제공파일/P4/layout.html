@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P4 목록 줄무늬</title>
+<style>
+* {
+   box-sizing: border-box; 
+  }
+
+body {
+  margin: 0;
+  padding: 30px; 
+  background: white;
+  font-family: "Noto Sans KR", "Malgun Gothic", sans-serif; 
+  }
+
+ul {
+  width: 400px;
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+  border: 1px solid lightgray; 
+    }
+
+li {
+  padding: 12px 16px;
+  border-bottom: 1px solid gray;
+  }
+
+
+/* ▼ 이 아래에 CSS를 작성하세요 */
+
+ul {
+  text-align: center;
+}
+
+ul li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+ul li:first-child {
+  font-weight: bold;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+</style>
+</head>
+<body>
+  <ul>
+    <li>국어</li>
+    <li>수학</li>
+    <li>영어</li>
+    <li>과학</li>
+    <li>사회</li>
+    <li>웹디자인</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P3 버튼 글자 가운데</title>
+<style>
+* {
+  box-sizing: border-box; 
+}
+
+body { 
+  margin: 0; 
+  padding: 30px;
+  background: whitesmoke;
+  font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+   }
+
+.btn { 
+  width: 200px; 
+  height: 50px; 
+  margin-bottom: 16px; 
+  background: royalblue; 
+  color: white;
+  border-radius: 6px;
+  font-size: 18px; 
+  }
+
+/* ▼ 이 아래에 CSS를 작성하세요 */
+
+.btn {
+  text-align: center;
+  padding-top: 12px;
+}
+
+.cancel {
+  background: gray;
+}
+
+.btn:hover {
+  background: gold;
+}
+
+</style>
+</head>
+<body>
+  <div class="btn">저장</div>
+  <div class="btn cancel">취소</div>
+  <div class="btn">삭제</div>
+</body>
+</html>
